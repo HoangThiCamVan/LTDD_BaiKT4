@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Tìm địa chỉ,món ăn,địa điểm,..."
+        android:drawableLeft="@drawable/ic_baseline_search_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Thanh Sơn,Thanh Bình,Hải Châu,Đà Nẵng"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:textColor="#000000"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/banner1"
+        android:layout_marginTop="5dp"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/ic_baseline_local_cafe_24"
+                    android:background="@drawable/button"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Trà Sữa"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/rice"
+                    android:background="@drawable/button"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Cơm"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/ga"
+                    android:background="@drawable/button"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Gà Rán"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/thuoc"
+                    android:background="@drawable/button"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Bánh"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/bia"
+                    android:background="@drawable/button"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Thuốc"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:drawableTop="@drawable/ic_baseline_local_cafe_24"
+                    android:background="@drawable/button"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Bia"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:layout_marginLeft="15dp">
+       <GridView
+           android:id="@+id/gv"
+           android:layout_width="wrap_content"
+           android:layout_height="320dp"
+           android:numColumns="2"
+           android:verticalSpacing="5dp"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp">
+       <Button
+           android:layout_width="100dp"
+           android:layout_height="70dp"
+           android:drawableTop="@drawable/ic_baseline_home_24"
+           android:background="@drawable/buttonfooter"
+           android:text="Home"
+           />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_assignment_24"
+            android:background="@drawable/buttonfooter"
+            android:text="Đơn hàng"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_notifications_24"
+            android:background="@drawable/buttonfooter"
+            android:text="Thông báo"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:drawableTop="@drawable/ic_baseline_account_circle_24"
+            android:background="@drawable/buttonfooter"
+            android:text="Tôi"
+            />
+        
+    </LinearLayout>
+
+
+</LinearLayout>
